@@ -18,7 +18,7 @@
 import NIOHPACK
 
 /// Async-await variant of BidirectionalStreamingCall.
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 public struct GRPCAsyncBidirectionalStreamingCall<Request, Response> {
   private let call: Call<Request, Response>
   private let responseParts: StreamingResponseParts<Response>
@@ -103,7 +103,7 @@ public struct GRPCAsyncBidirectionalStreamingCall<Request, Response> {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 internal enum AsyncCall {
   internal static func makeResponsePartHandler<Response>(
     responseParts: StreamingResponseParts<Response>,

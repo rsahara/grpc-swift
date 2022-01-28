@@ -30,7 +30,7 @@ import NIOHPACK
 // We also considered an `actor` but that felt clunky at the point of use since adopters would need
 // to `await` the retrieval of a logger or the updating of the trailers and each would requrie a
 // promise to glue the NIO and async-await paradigms in the handler.
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 public final class GRPCAsyncServerCallContext {
   private let lock = Lock()
 

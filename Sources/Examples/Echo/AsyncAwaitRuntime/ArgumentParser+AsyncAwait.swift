@@ -21,19 +21,19 @@
 
 import ArgumentParser
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 protocol AsyncParsableCommand: ParsableCommand {
   mutating func runAsync() async throws
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension AsyncParsableCommand {
   public mutating func run() throws {
     throw CleanExit.helpRequest(self)
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension ParsableCommand {
   static func main(_ arguments: [String]? = nil) async {
     do {

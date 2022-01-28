@@ -15,7 +15,7 @@
  */
 #if compiler(>=5.5)
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension AsyncSequence {
   internal func collect() async throws -> [Element] {
     return try await self.reduce(into: []) { accumulated, next in

@@ -17,7 +17,7 @@
 import EchoModel
 import GRPC
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 public final class EchoAsyncProvider: Echo_EchoAsyncProvider {
   public let interceptors: Echo_EchoServerInterceptorFactoryProtocol?
 

@@ -16,7 +16,7 @@
 #if compiler(>=5.5)
 import XCTest
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 internal func XCTAssertThrowsError<T>(
   _ expression: @autoclosure () async throws -> T,
   verify: (Error) -> Void = { _ in },

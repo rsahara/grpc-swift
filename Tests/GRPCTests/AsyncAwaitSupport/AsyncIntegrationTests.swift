@@ -22,7 +22,7 @@ import NIOHPACK
 import NIOPosix
 import XCTest
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 final class AsyncIntegrationTests: GRPCTestCase {
   private var group: EventLoopGroup!
   private var server: Server!

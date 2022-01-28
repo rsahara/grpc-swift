@@ -18,7 +18,7 @@
 import NIOCore
 import NIOHPACK
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 public struct GRPCAsyncServerHandler<
   Serializer: MessageSerializer,
   Deserializer: MessageDeserializer
@@ -47,7 +47,7 @@ public struct GRPCAsyncServerHandler<
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension GRPCAsyncServerHandler {
   public typealias Request = Deserializer.Output
   public typealias Response = Serializer.Input
@@ -149,7 +149,7 @@ extension GRPCAsyncServerHandler {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 @usableFromInline
 internal final class AsyncServerHandler<
   Serializer: MessageSerializer,

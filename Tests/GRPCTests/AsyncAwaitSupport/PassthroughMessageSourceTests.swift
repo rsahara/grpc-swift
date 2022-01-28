@@ -17,7 +17,7 @@
 @testable import GRPC
 import XCTest
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 class PassthroughMessageSourceTests: GRPCTestCase {
   func testBasicUsage() async throws {
     let source = PassthroughMessageSource<String, Never>()

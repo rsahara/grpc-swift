@@ -22,7 +22,7 @@ import NIOHPACK
 import NIOPosix
 import XCTest
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 class GRPCAsyncClientCallTests: GRPCTestCase {
   private var group: MultiThreadedEventLoopGroup?
   private var server: Server?
@@ -207,7 +207,7 @@ class GRPCAsyncClientCallTests: GRPCTestCase {
 
 // Workaround https://bugs.swift.org/browse/SR-15070 (compiler crashes when defining a class/actor
 // in an async context).
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 fileprivate actor RequestResponseCounter {
   var numResponses = 0
   var numRequests = 0

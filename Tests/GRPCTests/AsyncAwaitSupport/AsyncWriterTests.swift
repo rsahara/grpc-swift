@@ -18,7 +18,7 @@
 import NIOConcurrencyHelpers
 import XCTest
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 internal class AsyncWriterTests: GRPCTestCase {
   func testSingleWriterHappyPath() async throws {
     let delegate = CollectingDelegate<String, Int>()

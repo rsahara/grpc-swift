@@ -33,7 +33,7 @@ func loadFeatures() throws -> [Routeguide_Feature] {
 }
 
 /// Makes a `RouteGuide` client for a service hosted on "localhost" and listening on the given port.
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 func makeClient(port: Int, group: EventLoopGroup) throws -> Routeguide_RouteGuideAsyncClient {
   let channel = try GRPCChannelPool.with(
     target: .host("localhost", port: port),
@@ -44,7 +44,7 @@ func makeClient(port: Int, group: EventLoopGroup) throws -> Routeguide_RouteGuid
   return Routeguide_RouteGuideAsyncClient(channel: channel)
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 internal struct RouteGuideExample: @unchecked Sendable {
   private let routeGuide: Routeguide_RouteGuideAsyncClient
   private let features: [Routeguide_Feature]
@@ -88,7 +88,7 @@ internal struct RouteGuideExample: @unchecked Sendable {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension RouteGuideExample {
   /// Get the feature at the given latitude and longitude, if one exists.
   private func getFeature(latitude: Int, longitude: Int) async {
@@ -229,7 +229,7 @@ extension RouteGuideExample {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 struct RouteGuide: ParsableCommand {
   @Option(help: "The port to connect to")
   var port: Int = 1234

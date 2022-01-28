@@ -21,7 +21,7 @@ import RouteGuideModel
 
 #if compiler(>=5.5) && canImport(_Concurrency)
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 internal final class RouteGuideProvider: Routeguide_RouteGuideAsyncProvider {
   private let features: [Routeguide_Feature]
   private let notes: Notes
@@ -111,7 +111,7 @@ internal final class RouteGuideProvider: Routeguide_RouteGuideAsyncProvider {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 internal final actor Notes {
   private var recordedNotes: [Routeguide_Point: [Routeguide_RouteNote]]
 

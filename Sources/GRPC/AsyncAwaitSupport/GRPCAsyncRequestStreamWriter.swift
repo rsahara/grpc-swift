@@ -30,7 +30,7 @@
 /// // Finish the stream to indicate that no more messages will be sent.
 /// try await stream.finish()
 /// ```
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 public struct GRPCAsyncRequestStreamWriter<Request> {
   @usableFromInline
   internal let asyncWriter: AsyncWriter<Delegate<Request>>
@@ -74,7 +74,7 @@ public struct GRPCAsyncRequestStreamWriter<Request> {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension GRPCAsyncRequestStreamWriter {
   /// A delegate for the writer which writes messages to an underlying receiver.`
   @usableFromInline

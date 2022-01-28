@@ -21,7 +21,7 @@ import NIOHPACK
 ///
 /// Note: while this object is a `struct`, its implementation delegates to `Call`. It therefore
 /// has reference semantics.
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 public struct GRPCAsyncUnaryCall<Request, Response> {
   private let call: Call<Request, Response>
   private let responseParts: UnaryResponseParts<Response>

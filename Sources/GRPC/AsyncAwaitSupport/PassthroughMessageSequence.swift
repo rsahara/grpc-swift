@@ -16,7 +16,7 @@
 #if compiler(>=5.5) && canImport(_Concurrency)
 
 /// An ``AsyncSequence`` adapter for a ``PassthroughMessageSource``.`
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 @usableFromInline
 internal struct PassthroughMessageSequence<Element, Failure: Error>: AsyncSequence {
   @usableFromInline

@@ -16,7 +16,7 @@
 
 #if compiler(>=5.5) && canImport(_Concurrency)
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension CancellationError: GRPCStatusTransformable {
   public func makeGRPCStatus() -> GRPCStatus {
     return GRPCStatus(code: .unavailable, message: nil)

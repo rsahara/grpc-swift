@@ -25,7 +25,7 @@ import NIOCore
 ///
 /// The writer must also be "finished" with a final value: as for writing, calls to ``finish(_:)``
 /// may suspend if the writer has been paused.
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 @usableFromInline
 internal final actor AsyncWriter<Delegate: AsyncWriterDelegate> {
   @usableFromInline
@@ -291,7 +291,7 @@ internal final actor AsyncWriter<Delegate: AsyncWriterDelegate> {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension AsyncWriter where End == Void {
   @inlinable
   internal func finish() async throws {

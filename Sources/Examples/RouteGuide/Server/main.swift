@@ -33,7 +33,7 @@ func loadFeatures() throws -> [Routeguide_Feature] {
   return try Routeguide_Feature.array(fromJSONUTF8Data: data)
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 struct RouteGuide: ParsableCommand {
   @Option(help: "The port to listen on for new connections")
   var port = 1234

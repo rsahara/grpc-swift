@@ -17,7 +17,7 @@
 
 import SwiftProtobuf
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension GRPCClient {
   public func makeAsyncUnaryCall<Request: Message, Response: Message>(
     path: String,
@@ -150,7 +150,7 @@ extension GRPCClient {
 
 // MARK: - "Simple, but safe" wrappers.
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension GRPCClient {
   public func performAsyncUnaryCall<Request: Message, Response: Message>(
     path: String,
@@ -384,7 +384,7 @@ extension GRPCClient {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension GRPCClient {
   @inlinable
   internal func perform<Request, Response, RequestStream>(
@@ -445,7 +445,7 @@ extension GRPCClient {
   }
 }
 
-@available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+@available(macOS 12, iOS 13, tvOS 15, watchOS 8, *)
 extension AsyncStream {
   /// Create an `AsyncStream` from a regular (non-async) `Sequence`.
   ///
